@@ -18,11 +18,11 @@ var unJsPorDia=(function(window,undefined){
   	"htmlentities":htmlentities
   }
 })(window);
-//window.addEventListener("load",function(){
+window.addEventListener("load",function(){
 	var htmlentities=document.getElementById("htmlentities");
 	htmlentities.addEventListener("click",function(){
   	var data=document.getElementById("data").value;
     var resultEncode=unJsPorDia.htmlentities(data);
 		document.getElementById("resultEncode").value=resultEncode;
   });
-//});
+});
